@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Foodifyy Demo</title>
+<!-- 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.4/jquery.xdomainrequest.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/across-tabs/1.3.1/across-tabs.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<!-- 	Upload image to API Script Start -->
+	<script defer src="fetch.js"></script>
+	<!-- 	<script defer src="axiosSend.js"></script> -->
+	<!-- 	Upload image to API Script End -->
+
+</head>
+
+<body>
+<!-- 	<center>
+		<input type="text" placeholder="Enter API Endpoint" id="endpoint" />
+	</center> -->
+
+	<!-- 	AutComplete Search HTML Structure Start -->
+	<div class="wrapper">
+		<div class="search-input">
+			<input type="text" placeholder="Type to search..">
+			<div class="autocom-box">
+			</div>
+			<div class="icon">
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+	</div>
+	<!-- 	AutComplete Search HTML Structure End -->
+
+	<!-- 	Camera Upload Food Item HTML Structure Start -->
+	<div class="center">
+		<div class="form-input">
+			<div class="preview">
+				<img id="file-ip-1-preview">
+			</div>
+			<label for="file-ip-1">Upload Food</label>
+			<input capture="camera" type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+
+		</div>
+	</div>
+	<!-- 	Camera Upload Food Item HTML Structure End -->
+	<!-- ... -->
+	<!-- 	<input capture="camera" id="imagefile" type="file" accept="image/*" onchange="loadFile(event)" /> -->
+	
+	<!-- 	Firebase CDNs Start -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+	<!-- 	Firebase CDNs End -->
+
+	<!-- 	Firebase URL Scripts Start -->
+	<script src="firebase/firebaseConfig.js"></script>
+	<script src="firebase/getFirebase.js"></script>
+	<!-- 	Firebase URL Scripts End -->
+
+	<!-- 	AutoComplete Scripts Start -->
+	<script src="js/suggestions.js"></script>
+	<script src="js/auto.js"></script>
+	<!-- 	AutoComplete Scripts End -->
+
+</body>
+
+</html>

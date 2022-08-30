@@ -1,0 +1,133 @@
+/* Click Image Start */
+
+::selection {
+	color: #fff;
+	background: #664AFF;
+}
+
+.wrapper {
+	max-width: 450px;
+	margin: 5rem auto;
+}
+
+.wrapper .search-input {
+	background: #fff;
+	width: 100%;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input {
+	height: 55px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding: 0 60px 0 20px;
+	font-size: 18px;
+}
+
+.search-input.active input {
+	border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box {
+	padding: 0;
+	opacity: 0;
+	pointer-events: none;
+	max-height: 280px;
+	overflow-y: auto;
+}
+
+.search-input.active .autocom-box {
+	padding: 10px 8px;
+	opacity: 1;
+	pointer-events: auto;
+	overflow-x: hidden;
+}
+
+.autocom-box li{
+	list-style: none;
+	padding: 8px 12px;
+	display: none;
+	width: 100%;
+	cursor: default;
+	border-radius: 3px;
+	z-index: 1000;
+}
+
+.search-input.active .autocom-box li {
+	display: block;
+}
+
+.autocom-box li:hover {
+	background: #efefef;
+}
+
+.search-input .icon {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 55px;
+	width: 55px;
+	text-align: center;
+	line-height: 55px;
+	font-size: 20px;
+	color: #644bff;
+	cursor: pointer;
+}
+
+/* Click Image End */
+
+/* ------------------------------- */
+
+/* Click Image Start */
+
+.center {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-input {
+	width: 350px;
+	padding: 20px;
+	background: #fff;
+	box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+		3px 3px 7px rgba(94, 104, 121, 0.377);
+}
+
+.form-input input {
+	display: none;
+}
+
+.form-input label {
+	display: block;
+	width: 45%;
+	height: 45px;
+	margin-left: 25%;
+	line-height: 50px;
+	text-align: center;
+	background: #1172c2;
+	color: #fff;
+	font-size: 15px;
+	font-family: "Open Sans", sans-serif;
+	text-transform: Uppercase;
+	font-weight: 600;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form-input img {
+	width: 100%;
+	display: none;
+	margin-bottom: 30px;
+}
+
+.form-input .preview {
+	min-height: 21rem;
+	min-width: 21rem;
+}
+
+/* Click Image End */
