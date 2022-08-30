@@ -47,15 +47,20 @@ async function sendSearch(item) {
 	}
 
 	let endpoint = sessionStorage.getItem("Endpoint")
-	console.log("https" + endpoint.split("http")[1] + "/pred/" + item);
+	console.log("https://" + endpoint.split("://")[1] + "/pred/" + item);
 
-	let response = fetch("https" + endpoint.split("http")[1] + "/pred/" + item, {
+	let response = fetch("https://" + endpoint.split("://")[1] + "/pred/" + item, {
 		method: "GET",
 		mode: "no-cors",
 		headers: headersList
 	});
-
-	response.then(res => res.text())
-		.then(result => console.log(result))
-		.catch(error => console.log('error', error));
+	response.then(res => {
+		console.log("json : ",res.body.data)
+		console.log("text :",res.text())
+		console.log("normal : ",res)
+	})
+	.catch(error => console.log('error', error));
+	// response.then(res => res.text())
+	// 	.then(result => console.log(result))
+	// 	.catch(error => console.log('error', error));
 }

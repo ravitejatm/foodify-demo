@@ -14,7 +14,7 @@ async function send(base64_str) {
 		base64_str.split('data:image/jpeg;base64,')[1]);
 	bodyContent.append("filename", 'testing_correct_filename');
 
-	let response = fetch("https" + endpoint.split("http")[1] + "/predictbase64/", {
+	let response = fetch("https://" + endpoint.split("://")[1] + "/predictbase64/", {
 		method: "POST",
 		mode: "no-cors",
 		body: bodyContent,
